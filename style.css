@@ -1,83 +1,71 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
-    
-    gap: 100px;
     align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
 }
 
-/* --- Nav --- */
-
-.header-container {
-    flex-direction: column;
-    background: #1F2937;
-    width: 100%
+header {
+    background: #1f2937;
+    width: 100%;
 }
 
-.header-banner {
+.banner {
+    font-size: 24px;
+    font-weight: 400;
+    color: #F9FAF8;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-}
-
-.logo {
-    font-size: 24px;
-    color: #f9faf8
-}
-
-.header-banner ul {
-    padding-right: 20px;
+    width: 60%;
+    margin: 0 auto;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
     display: flex;
     gap: 20px;
+    list-style: none;
 }
-    
+
 a {
-    color: #E5E7EB;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
 }
 
-
-/* --- Hero --- */
-
-.hero-container {
+.header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
-    gap: 50px;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 60%;
 }
 
-.hero-text #main {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900;
-}
-
-#hero-subtext {
-    font-size: 18px;
+.left-text {
     color: #E5E7EB;
+    width: 50%;
+    padding-right: 50px;
 }
 
-.hero-image {
+.img {
     color: white;
     background: gray;
-    width: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
-button {
+.header button {
     background-color: #3882F6;
     border: none;
     color: white;
@@ -88,105 +76,88 @@ button {
     font-size: 16px;
 }
 
+/* --- Body --- */
 
-/* --- Hero --- */
-
-
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-}
-
-#info-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1F2937;
-}
-
-.img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:100px;
-    border: 100px;
-}
-
-.img-ul li {
+.information {
     text-align: center;
 }
 
-.img {
-    margin: 0 auto;
+.img-ul li {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.img-container .img {
     height: 100px;
     width: 100px;
     border-style: solid;
     border-radius: 8px;
     border-color: #3882F6;
-    
+    background-color: white;
 }
 
 /* --- Quote --- */
-
-.quote {
+    
+.quote-container {
     display: flex;
-    flex-direction: column;
-    background-color: #E5E7EB;
-    width: 100%;
-    padding: 60px 100px;
-}
-
-#quote {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 2% 30%;
+}
+
+.quote p {
     font-style: italic;
-    margin: 5px;
-    font-weight: 10
+    font-size: 26px;
+    font-weight: 1;
 }
 
-#quote-source {
-    font-size: 25px;
+.quote-source {
     display: flex;
-    text-align: right;
     justify-content: flex-end;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-/* Quote Text: 36px, light italic, #1F2937 */
-
-/* --- Bottom Sign Up --- */
+/* --- CTA --- */
 
 .call-to-action {
     display: flex;
     background-color: #3882F6;
-    width: 80%;
+    color: white;
+    width: 70%;
     border-radius: 8px;
+    padding: 1% 5%;
     justify-content: space-between;
+    align-items: center;
+}
+
+.call-to-action #sign-up-text {
+    font-weight: 1;
 }
 
 .call-text {
+    width: 60%;
+}
+
+.call-text p {
+    font-weight: 800;
+}
+
+.call-to-action button {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 30px 80px;
-    color: white;
-}
-
-#call {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#sign-up {
+    align-items: center;
     border-color: white;
+    color: white;
     border-style: solid;
-    margin-right: 30px;
+    border-radius: 8px;
+    background-color: #3882F6;
+
+    height: 80%;
+    padding: 10px 30px;
 }
+
 
 .footer {
     display: flex;
@@ -196,5 +167,6 @@ button {
     height: 50px;
     justify-content: center;
     align-items: center;
+
 }
 
